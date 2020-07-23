@@ -2,9 +2,15 @@
 
 For this assignment, you will be working with a Magazine domain.
 
-We have three models: `Author`, `Article`, and `Magazine`.
+We have three models: 
+`Author`, 
+`Article`, and 
+`Magazine`.
 
-For our purposes, an `Author` has many `Article`s, a `Magazine` has many `Article`s, and `Article`s belong to both `Author` and `Magazine`.
+For our purposes, 
+- an `Author` has many `Article`s,
+- a `Magazine` has many `Article`s, 
+- and `Article`s belong to both `Author` and `Magazine`.   <-----article is join class
 
 `Author` - `Magazine` is a many to many relationship.
 
@@ -44,7 +50,7 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 ### Initializers, Readers, and Writers
 
-#### Author
+<!-- #### Author
 
 - `Author#initialize(name)`
   - An author is initialized with a name, as a string.
@@ -62,8 +68,8 @@ Some of the methods listed are provided to you in the starter code. You should c
 - `Magazine#category`
   - Returns the category of this magazine
 - `Magazine.all`
-  - Returns an array of all Magazine instances
-
+  - Returns an array of all Magazine instances -->
+<!-- 
 #### Article
 
 - `Article#initialize(author, magazine, title)`
@@ -72,37 +78,37 @@ Some of the methods listed are provided to you in the starter code. You should c
 - `Article#title`
   - Returns the title for that given article
 - `Article.all`
-  - Returns an array of all Article instances
+  - Returns an array of all Article instances -->
 
 ### Object Relationship Methods
 
 #### Article
 
-- `Article#author`
+<!-- - `Article#author`
   - Returns the author for that given article
 - `Article#magazine`
-  - Returns the magazine for that given article
+  - Returns the magazine for that given article -->
 
 #### Author
-
+<!-- 
 - `Author#articles`
   - Returns an array of Article instances the author has written
 - `Author#magazines`
-  - Returns a **unique** array of Magazine instances for which the author has contributed to
+  - Returns a **unique** array of Magazine instances for which the author has contributed to -->
 
 #### Magazine
 
-- `Magazine#contributors`
-  - Returns an array of Author instances who have written for this magazine
+<!-- - `Magazine#contributors`
+  - Returns an array of Author instances who have written for this magazine -->
 
 ### Associations and Aggregate Methods
 
 #### Author
 
-- `Author#add_article(magazine, title)`
+<!-- - `Author#add_article(magazine, title)`
   - Given a magazine (as Magazine instance) and a title (as a string), creates a new Article instance and associates it with that author and that magazine.
 - `Author#topic_areas`
-  - Returns a **unique** array of strings with the categories of the magazines the author has contributed to
+  - Returns a **unique** array of strings with the categories of the magazines the author has contributed to -->
 
 #### Magazine
 
